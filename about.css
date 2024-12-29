@@ -1,0 +1,192 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px; /* Adjusts for fixed navbar */
+}
+
+/* Header */
+header {
+    background: #2d6a4f;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+    float: left;
+}
+
+header nav ul {
+    list-style: none;
+    padding-right: 20px;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Hero Section */
+#home {
+    background: url('back.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#home input[type="search"] {
+    padding: 10px;
+    width: 60%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2d6a4f;
+}
+
+#about p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #555;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    color: #2d6a4f;
+}
+
+#about ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#about ul li {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#about ul li::before {
+    content: "✔️";
+    color: #2d6a4f;
+    padding-right: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer ul.social-media {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+footer ul.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul.social-media li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    header .logo {
+        font-size: 1.6rem;
+    }
+
+    header nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    #home input[type="search"] {
+        width: 80%;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about ul li {
+        font-size: 1rem;
+    }
+
+    footer ul.social-media li a {
+        font-size: 1rem;
+    }
+}
